@@ -2,7 +2,7 @@
 
 $host = "localhost";
 $user = "root";
-$pass = "147258çç";
+$pass = "";
 $dbname = "crud";
 $port = 3306;
 
