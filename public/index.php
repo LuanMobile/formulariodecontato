@@ -1,6 +1,12 @@
 <?php
 
-require_once __DIR__ . "../vendor/autoload.php";
+use App\Core\Core;
+use App\Http\Route;
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+require_once "../vendor/autoload.php";
+require_once '../src/routes/routes.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable('../');
 $dotenv->load();
+
+Core::dispatch(Route::routes());
